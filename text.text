@@ -1,0 +1,17 @@
+<van-cell
+          :title="item.name"
+          size="large"
+          center
+          v-for="item in newList"
+          :key="item.id"
+        >
+          <van-icon name="play-circle-o" size="0.7rem" color="#333" />
+          <template #label>
+            <!-- :label="item.song.artists[0].name + ' - ' + item.name" -->
+            <span v-for="(item1, index1) in item.song.artists" :key="index1"
+              >{{ item1.name
+              }}{{ index1 === item.song.artists.length - 1 ? "" : "/" }}</span
+            >
+            <span>- {{ item.name }}</span>
+          </template>
+        </van-cell>
