@@ -7,6 +7,7 @@
           <van-image :src="item.picUrl" />
           <div class="van-multi-ellipsis--l2">
             {{ item.name }}111
+            {{ item.name }} 222
           </div>
         </van-col>
       </van-row>
