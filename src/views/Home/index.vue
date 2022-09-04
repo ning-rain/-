@@ -6,7 +6,7 @@
         <van-col span="8" v-for="item in recommentList" :key="item.id">
           <van-image :src="item.picUrl" />
           <div class="van-multi-ellipsis--l2">
-            {{ item.name }}
+            {{ item.name }} 222
           </div>
         </van-col>
       </van-row>
